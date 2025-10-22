@@ -8,7 +8,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 #load dataset
-data=pd.read_csv("cafe_sales.csv")
+import os
+data=pd.read_csv(os.path.join(os.path.dirname(__file__),"cafe_sales.csv"))
 
 #preview first 5 rows
 print(data.head())
